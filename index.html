@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Growth Asset Trading — Bot Trading Chuyên Nghiệp</title>
+  <title>Growth Asset Trading — Trader &amp; Software Engineer</title>
   <meta name="description"
-    content="Growth Asset Trading chuyên thiết kế và triển khai bot trading tự động theo chiến lược riêng của bạn. Kỷ luật tuyệt đối, hoạt động 24/7, kết quả thực tế.">
-  <link rel="icon" type="image/svg+xml" href="Logo.svg">
+    content="Trader kỳ cựu kiêm kỹ sư phần mềm — tự thiết kế chiến lược, tự viết toàn bộ code EA/bot MetaTrader 5, Telegram automation và web sản phẩm. Nhận code EA/bot theo yêu cầu.">
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpeg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -19,14 +19,11 @@
 <body>
 
   <!-- ═══════════════════════ NAV ═══════════════════════ -->
-  <nav id="nav">
-    <div class="nav-inner container">
-      <a href="#hero" class="nav-logo" aria-label="Growth Asset Trading">
-        <svg class="nav-logo-icon" viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path
-            d="M352 64C352 46.3 337.7 32 320 32C302.3 32 288 46.3 288 64L288 128L192 128C139 128 96 171 96 224L96 448C96 501 139 544 192 544L448 544C501 544 544 501 544 448L544 224C544 171 501 128 448 128L352 128L352 64zM160 432C160 418.7 170.7 408 184 408L216 408C229.3 408 240 418.7 240 432C240 445.3 229.3 456 216 456L184 456C170.7 456 160 445.3 160 432zM280 432C280 418.7 290.7 408 304 408L336 408C349.3 408 360 418.7 360 432C360 445.3 349.3 456 336 456L304 456C290.7 456 280 445.3 280 432zM400 432C400 418.7 410.7 408 424 408L456 408C469.3 408 480 418.7 480 432C480 445.3 469.3 456 456 456L424 456C410.7 456 400 445.3 400 432zM224 240C250.5 240 272 261.5 272 288C272 314.5 250.5 336 224 336C197.5 336 176 314.5 176 288C176 261.5 197.5 240 224 240zM368 288C368 261.5 389.5 240 416 240C442.5 240 464 261.5 464 288C464 314.5 442.5 336 416 336C389.5 336 368 314.5 368 288zM64 288C64 270.3 49.7 256 32 256C14.3 256 0 270.3 0 288L0 384C0 401.7 14.3 416 32 416C49.7 416 64 401.7 64 384L64 288zM608 256C590.3 256 576 270.3 576 288L576 384C576 401.7 590.3 416 608 416C625.7 416 640 401.7 640 384L640 288C640 270.3 625.7 256 608 256z" />
-        </svg>
-        <span class="nav-logo-text">Growth Asset<span class="accent"> Trading</span></span>
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#top" class="nav-logo" aria-label="Growth Asset Trading">
+        <img src="assets/logo.jpeg" alt="" class="nav-logo-img" width="26" height="26">
+        <span class="nav-logo-text">Growth Asset Trading</span>
       </a>
 
       <button class="nav-hamburger" id="hamburger" aria-label="Mở menu" aria-expanded="false">
@@ -34,676 +31,354 @@
       </button>
 
       <div class="nav-links" id="nav-links">
-        <a href="#pain" class="nav-link">Dịch Vụ</a>
-        <a href="#results" class="nav-link">Kết Quả</a>
-        <a href="#process" class="nav-link">Quy Trình</a>
-        <a href="#contact" class="nav-link">Liên Hệ</a>
-        <a href="#contact" class="btn btn-primary nav-cta">Tư Vấn Miễn Phí →</a>
+        <a href="#portfolio" class="nav-link">Sản phẩm</a>
+        <a href="#telegram" class="nav-link">Telegram Tools</a>
+        <a href="#web" class="nav-link">Web</a>
+        <a href="#services" class="nav-link">Dịch vụ</a>
+        <a href="#contact" class="nav-link">Liên hệ</a>
+        <a href="https://t.me/longhdtrader" target="_blank" rel="noopener" class="btn btn-ghost nav-cta">Telegram
+          @longhdtrader</a>
       </div>
     </div>
-  </nav>
+  </header>
 
-  <main>
+  <main id="top">
 
     <!-- ═══════════════════════ HERO ═══════════════════════ -->
-    <section id="hero">
-      <div class="hero-bg-grid" aria-hidden="true"></div>
-      <div class="hero-glow" aria-hidden="true"></div>
-      <div class="container hero-inner">
-        <div class="hero-content">
-          <p class="hero-badge" data-animate>
-            <span class="dot"></span>
-            BOT TRADING TỰ ĐỘNG
-          </p>
-          <h1 class="hero-headline" data-animate style="transition-delay:.1s">
-            Không phải bot<br>đầu tiên.<br>
-            <span class="accent">Nhưng là bot tốt nhất.</span>
-          </h1>
-          <p class="hero-sub" data-animate style="transition-delay:.15s">
-            Chúng tôi thiết kế và triển khai bot trading hoàn toàn theo chiến lược của bạn —
-            kỷ luật tuyệt đối, hoạt động 24/7, không cảm xúc. Từ ý tưởng đến bot chạy thực
-            trong vài tuần, không phải vài tháng.
-          </p>
-          <div class="hero-ctas" data-animate style="transition-delay:.25s">
-            <a href="#contact" class="btn btn-primary">Bắt Đầu Ngay →</a>
-            <a href="#results" class="btn btn-ghost">Xem Kết Quả</a>
-          </div>
-        </div>
-        <div class="hero-visual" data-animate style="transition-delay:.3s" aria-hidden="true">
-          <div class="hero-chart">
-            <div class="chart-line"></div>
-            <div class="chart-candles">
-              <span class="candle c1"></span>
-              <span class="candle c2 green"></span>
-              <span class="candle c3"></span>
-              <span class="candle c4 green"></span>
-              <span class="candle c5 green"></span>
-              <span class="candle c6"></span>
-              <span class="candle c7 green"></span>
-              <span class="candle c8 green"></span>
-            </div>
-            <div class="chart-badge">
-              <span class="badge-dot"></span>BOT ĐANG CHẠY
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="hero-scroll-indicator" aria-hidden="true">
-        <span></span>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════ LOGOS / SUPPORTED EXCHANGES ═══════════════════════ -->
-    <section id="exchanges" class="section-alt">
-      <div class="container">
-        <p class="section-label centered" data-animate>TÍCH HỢP VỚI CÁC BROKER HÀNG ĐẦU</p>
-        <div class="exchanges-row" data-animate style="transition-delay:.1s">
-          <span class="exchange-tag">IC Markets</span>
-          <span class="exchange-tag">Pepperstone</span>
-          <span class="exchange-tag">Exness</span>
-          <span class="exchange-tag">XM</span>
-          <span class="exchange-tag">IG Group</span>
-          <span class="exchange-tag">FXCM</span>
+    <section class="hero">
+      <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <p class="eyebrow" data-animate>// TRADER &amp; SOFTWARE ENGINEER — 100% TỰ TAY CODE BOT</p>
+        <h1 class="hero-headline" data-animate style="transition-delay:.1s">
+          Tôi biến chiến lược giao dịch<br>thành <span class="accent">bot chạy 24/7,</span> không cảm xúc, không sai
+          lệch.
+        </h1>
+        <p class="hero-sub" data-animate style="transition-delay:.15s">
+          Trader kỳ cựu, đồng thời là kỹ sư phần mềm — tôi tự thiết kế chiến lược, tự viết toàn bộ code EA/bot của
+          mình trên MetaTrader 5, Telegram, và tự tay dựng cả những trang web sản phẩm đi kèm.
+        </p>
+        <div class="hero-ctas" data-animate style="transition-delay:.25s">
+          <a href="#portfolio" class="btn btn-primary">Xem danh mục sản phẩm →</a>
+          <a href="#contact" class="btn btn-ghost-mono">Đặt bot riêng</a>
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════ PAIN ═══════════════════════ -->
-    <section id="pain">
-      <div class="container pain-inner">
-        <div class="pain-left">
-          <p class="section-label" data-animate>VẤN ĐỀ BẠN ĐANG GẶP PHẢI</p>
-          <h2 data-animate style="transition-delay:.1s">
-            Bạn đang xây dựng<br>thứ gì đó <span class="accent">quan trọng.</span>
-          </h2>
-          <p class="body-text" data-animate style="transition-delay:.15s">
-            Nhưng giao dịch thủ công đang kéo lùi kết quả của bạn. Không phải vì chiến lược sai —
-            mà vì con người không thể thực thi hoàn hảo như máy móc.
-          </p>
-          <ul class="pain-list">
-            <li data-animate style="transition-delay:.2s">
-              <div class="pain-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
-                  <circle cx="12" cy="12" r="10" />
-                  <line x1="12" y1="17" x2="12.01" y2="17" />
-                </svg>
-              </div>
-              <div>
-                <strong>Cảm xúc can thiệp vào lệnh</strong>
-                <p>Fear và greed khiến bạn vào lệnh sai thời điểm, giữ lệnh lỗ quá lâu hoặc chốt lời quá sớm.</p>
-              </div>
-            </li>
-            <li data-animate style="transition-delay:.25s">
-              <div class="pain-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="10" />
-                  <polyline points="12 6 12 12 16 14" />
-                </svg>
-              </div>
-              <div>
-                <strong>Không thể theo dõi thị trường 24/7</strong>
-                <p>Crypto và Forex không ngủ. Cơ hội lớn nhất thường xuất hiện lúc 3 giờ sáng.</p>
-              </div>
-            </li>
-            <li data-animate style="transition-delay:.3s">
-              <div class="pain-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
-                </svg>
-              </div>
-              <div>
-                <strong>Chiến lược tốt nhưng thực thi kém</strong>
-                <p>Backtesting cho kết quả xuất sắc, nhưng khi giao dịch thực tế lại sai lệch hoàn toàn.</p>
-              </div>
-            </li>
-            <li data-animate style="transition-delay:.35s">
-              <div class="pain-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
-                </svg>
-              </div>
-              <div>
-                <strong>Mất cơ hội vì vào lệnh trễ</strong>
-                <p>Tín hiệu xuất hiện và biến mất trong vài giây. Tay người không thể phản ứng đủ nhanh.</p>
-              </div>
-            </li>
-          </ul>
+    <!-- ═══════════════════════ STATS STRIP ═══════════════════════ -->
+    <section class="stats" aria-label="Số liệu tổng quan">
+      <div class="stats-grid">
+        <div class="stat-item" data-animate>
+          <div class="stat-num"><span data-count="11" data-suffix="+">0+</span></div>
+          <div class="stat-label">EA &amp; bot đã triển khai</div>
         </div>
-        <div class="pain-right" data-animate style="transition-delay:.2s">
-          <div class="pain-card">
-            <div class="pain-card-header">
-              <span class="tag tag-purple">Thực Tế</span>
-            </div>
-            <p class="pain-card-quote">"Chiến lược của tôi đúng — nhưng tôi luôn vào lệnh sai lúc. Tôi biết nguyên nhân
-              nhưng không thể kiểm soát được."</p>
-            <div class="pain-card-meta">— Trader với 3 năm kinh nghiệm</div>
-            <div class="pain-card-stats">
-              <div class="mini-stat">
-                <span class="mini-stat-value text-red">-23%</span>
-                <span class="mini-stat-label">Lệnh do cảm xúc</span>
-              </div>
-              <div class="mini-stat">
-                <span class="mini-stat-value text-accent">+78%</span>
-                <span class="mini-stat-label">Sau khi dùng bot</span>
-              </div>
-            </div>
-          </div>
-          <div class="pain-card-secondary">
-            <p class="body-text-sm">Đây không phải vấn đề của riêng bạn. Hơn <strong class="accent">80% trader</strong>
-              thua lỗ vì thực thi — không phải vì chiến lược.</p>
-          </div>
+        <div class="stat-item" data-animate style="transition-delay:.05s">
+          <div class="stat-num"><span data-count="3">0</span></div>
+          <div class="stat-label">Nền tảng: MT5 · Telegram · Web</div>
+        </div>
+        <div class="stat-item" data-animate style="transition-delay:.1s">
+          <div class="stat-num"><span data-count="6" data-suffix="+">0+</span></div>
+          <div class="stat-label">Sàn/broker tích hợp</div>
+        </div>
+        <div class="stat-item" data-animate style="transition-delay:.15s">
+          <div class="stat-num"><span data-count="100" data-suffix="%">0%</span></div>
+          <div class="stat-label">Code tự viết, không thuê ngoài</div>
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════ BENEFITS ═══════════════════════ -->
-    <section id="benefits" class="section-alt">
-      <div class="container">
-        <div class="section-header centered" data-animate>
-          <p class="section-label">KHI BOT THAY BẠN THỰC THI</p>
-          <h2>Điều gì thay đổi khi Growth Asset Trading <br><span class="accent">hỗ trợ bạn.</span></h2>
+    <!-- ═══════════════════════ PORTFOLIO — EA & BOT ═══════════════════════ -->
+    <section id="portfolio" class="section">
+      <p class="eyebrow" data-animate>// PORTFOLIO — EA &amp; BOT ĐÃ XÂY DỰNG</p>
+      <div class="section-head-row" data-animate style="transition-delay:.05s">
+        <h2>EA &amp; bot đã xây dựng — cho khách hàng và cho chính mình</h2>
+        <div class="warn-tag">⚠ số liệu hiệu suất bên dưới là dữ liệu minh hoạ, sẽ cập nhật báo cáo backtest/live
+          thực tế</div>
+      </div>
+
+      <div class="ea-grid">
+        <article class="ea-card" data-animate>
+          <div class="ea-card-head">
+            <h3>DCA Basket EA</h3>
+            <span class="pill">XAUUSD</span>
+          </div>
+          <p class="ea-desc">DCA 2 chiều Buy/Sell, News Filter qua MT5 Calendar, Capital Guard theo % vốn, Fast
+            Basket Close.</p>
+          <div class="ea-metrics">
+            <div><span class="ea-metric-num">68%</span><span class="ea-metric-label">Win rate</span></div>
+            <div><span class="ea-metric-num">1.8</span><span class="ea-metric-label">Profit factor</span></div>
+            <div><span class="ea-metric-num">11%</span><span class="ea-metric-label">Max drawdown</span></div>
+          </div>
+        </article>
+
+        <article class="ea-card" data-animate>
+          <div class="ea-card-head">
+            <h3>HedgingBot</h3>
+            <span class="pill">XAUUSD</span>
+          </div>
+          <p class="ea-desc">Dual Straddle Breakout, trailing SL 6 tầng, state machine tự phục hồi khi khởi động
+            lại.</p>
+          <div class="ea-metrics">
+            <div><span class="ea-metric-num">61%</span><span class="ea-metric-label">Win rate</span></div>
+            <div><span class="ea-metric-num">1.6</span><span class="ea-metric-label">Profit factor</span></div>
+            <div><span class="ea-metric-num">14%</span><span class="ea-metric-label">Max drawdown</span></div>
+          </div>
+        </article>
+
+        <article class="ea-card" data-animate style="transition-delay:.05s">
+          <div class="ea-card-head">
+            <h3>SMC UTBot EA</h3>
+            <span class="pill">ANY</span>
+          </div>
+          <p class="ea-desc">Smart Money Concepts + Order Block + FVG + UT Bot + Fibonacci + HalfTrend trong một
+            EA.</p>
+          <div class="ea-metrics">
+            <div><span class="ea-metric-num">64%</span><span class="ea-metric-label">Win rate</span></div>
+            <div><span class="ea-metric-num">1.7</span><span class="ea-metric-label">Profit factor</span></div>
+            <div><span class="ea-metric-num">13%</span><span class="ea-metric-label">Max drawdown</span></div>
+          </div>
+        </article>
+
+        <article class="ea-card" data-animate style="transition-delay:.05s">
+          <div class="ea-card-head">
+            <h3>UT Bot EA</h3>
+            <span class="pill">ANY</span>
+          </div>
+          <p class="ea-desc">Tín hiệu UT Bot với ATR Trailing Stop nội bộ, 4 tầng trailing SL theo lợi nhuận.</p>
+          <div class="ea-metrics">
+            <div><span class="ea-metric-num">59%</span><span class="ea-metric-label">Win rate</span></div>
+            <div><span class="ea-metric-num">1.5</span><span class="ea-metric-label">Profit factor</span></div>
+            <div><span class="ea-metric-num">15%</span><span class="ea-metric-label">Max drawdown</span></div>
+          </div>
+        </article>
+
+        <article class="ea-card" data-animate style="transition-delay:.1s">
+          <div class="ea-card-head">
+            <h3>M5Bot</h3>
+            <span class="pill">ANY</span>
+          </div>
+          <p class="ea-desc">Nhận diện mẫu hình nến M5 kết hợp SL/TP quản lý rủi ro chặt chẽ.</p>
+          <div class="ea-metrics">
+            <div><span class="ea-metric-num">57%</span><span class="ea-metric-label">Win rate</span></div>
+            <div><span class="ea-metric-num">1.4</span><span class="ea-metric-label">Profit factor</span></div>
+            <div><span class="ea-metric-num">17%</span><span class="ea-metric-label">Max drawdown</span></div>
+          </div>
+        </article>
+
+        <article class="ea-card" data-animate style="transition-delay:.1s">
+          <div class="ea-card-head">
+            <h3>Bot Duy Dương</h3>
+            <span class="pill">ANY</span>
+          </div>
+          <p class="ea-desc">Bollinger Bands Breakout kết hợp EMA và Stochastic để lọc tín hiệu vào lệnh.</p>
+          <div class="ea-metrics">
+            <div><span class="ea-metric-num">60%</span><span class="ea-metric-label">Win rate</span></div>
+            <div><span class="ea-metric-num">1.5</span><span class="ea-metric-label">Profit factor</span></div>
+            <div><span class="ea-metric-num">14%</span><span class="ea-metric-label">Max drawdown</span></div>
+          </div>
+        </article>
+
+        <article class="ea-card" data-animate style="transition-delay:.15s">
+          <div class="ea-card-head">
+            <h3>FiboBot</h3>
+            <span class="pill">ANY</span>
+          </div>
+          <p class="ea-desc">Fibonacci Retracement kết hợp Pivot Point, cấu hình riêng cho 8 symbol khác nhau.</p>
+          <div class="ea-metrics">
+            <div><span class="ea-metric-num">62%</span><span class="ea-metric-label">Win rate</span></div>
+            <div><span class="ea-metric-num">1.6</span><span class="ea-metric-label">Profit factor</span></div>
+            <div><span class="ea-metric-num">15%</span><span class="ea-metric-label">Max drawdown</span></div>
+          </div>
+        </article>
+
+        <article class="ea-card" data-animate style="transition-delay:.15s">
+          <div class="ea-card-head">
+            <h3>ComBot</h3>
+            <span class="pill">ANY</span>
+          </div>
+          <p class="ea-desc">Lọc tín hiệu bằng ADX, quản lý đa vị thế cùng lúc, theo dõi P&amp;L theo ngày.</p>
+          <div class="ea-metrics">
+            <div><span class="ea-metric-num">58%</span><span class="ea-metric-label">Win rate</span></div>
+            <div><span class="ea-metric-num">1.5</span><span class="ea-metric-label">Profit factor</span></div>
+            <div><span class="ea-metric-num">16%</span><span class="ea-metric-label">Max drawdown</span></div>
+          </div>
+        </article>
+
+        <article class="ea-card" data-animate style="transition-delay:.2s">
+          <div class="ea-card-head">
+            <h3>PropfirmBot &amp; TheCapitalBot</h3>
+            <span class="pill">ANY</span>
+          </div>
+          <p class="ea-desc">Trợ lý giao dịch thủ công: EMA đa khung thời gian, kéo TP/SL trên chart, license key
+            theo tháng.</p>
+          <div class="ea-metrics">
+            <div><span class="ea-metric-num">—</span><span class="ea-metric-label">Win rate</span></div>
+            <div><span class="ea-metric-num">—</span><span class="ea-metric-label">Profit factor</span></div>
+            <div><span class="ea-metric-num">15$</span><span class="ea-metric-label">Rủi ro/lệnh</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ TELEGRAM TOOLS ═══════════════════════ -->
+    <section id="telegram" class="section">
+      <p class="eyebrow" data-animate>// TELEGRAM AUTOMATION</p>
+      <h2 data-animate style="transition-delay:.05s">Bộ công cụ Telegram cho trader</h2>
+      <p class="section-desc" data-animate style="transition-delay:.1s">3 bot xử lý luồng tín hiệu &amp; tin nhắn —
+        từ tự động phát tín hiệu, gửi cảnh báo, đến chuyển tiếp tin nhắn giữa các nhóm/kênh khác nhau.</p>
+
+      <div class="telegram-grid">
+        <div class="telegram-card" data-animate style="transition-delay:.15s">
+          <div class="telegram-tag telegram-tag-amber">SIGNAL BOT</div>
+          <h3>SendSignal Bot</h3>
+          <p>Gửi tín hiệu giao dịch tự động vào group/kênh Telegram theo thời gian thực khi có setup đạt điều
+            kiện.</p>
         </div>
-        <div class="benefits-grid">
-          <div class="benefit-card" data-animate style="transition-delay:.05s">
-            <div class="benefit-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-              </svg>
-            </div>
-            <h3>Kỷ luật tuyệt đối</h3>
-            <p>Bot thực thi đúng chiến lược mọi lúc. Không bao giờ bỏ lỡ điều kiện vào lệnh, không bao giờ trì hoãn
-              thoát lệnh.</p>
-          </div>
-          <div class="benefit-card" data-animate style="transition-delay:.1s">
-            <div class="benefit-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10" />
-                <polyline points="12 6 12 12 16 14" />
-              </svg>
-            </div>
-            <h3>Hoạt động 24/7</h3>
-            <p>Theo dõi đồng thời mọi phiên giao dịch — châu Á, châu Âu, Mỹ. Bot không cần ngủ, không cần nghỉ.</p>
-          </div>
-          <div class="benefit-card" data-animate style="transition-delay:.15s">
-            <div class="benefit-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
-              </svg>
-            </div>
-            <h3>Tốc độ mili-giây</h3>
-            <p>Vào lệnh và thoát lệnh trong mili-giây khi điều kiện thỏa mãn. Không bao giờ bỏ lỡ cơ hội vì chậm tay.
-            </p>
-          </div>
-          <div class="benefit-card" data-animate style="transition-delay:.2s">
-            <div class="benefit-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                <path d="M2 17l10 5 10-5" />
-                <path d="M2 12l10 5 10-5" />
-              </svg>
-            </div>
-            <h3>Quản lý rủi ro tự động</h3>
-            <p>Stop-loss, take-profit, trailing stop — tất cả được thiết lập chính xác và thực thi không do dự theo từng
-              lệnh.</p>
-          </div>
-          <div class="benefit-card" data-animate style="transition-delay:.25s">
-            <div class="benefit-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
-                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
-              </svg>
-            </div>
-            <h3>Tùy biến hoàn toàn</h3>
-            <p>Bot được build theo đúng chiến lược của bạn — không phải template có sẵn. Từ indicator đến logic
-              entry/exit.</p>
-          </div>
-          <div class="benefit-card" data-animate style="transition-delay:.3s">
-            <div class="benefit-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
-              </svg>
-            </div>
-            <h3>Backtesting chuyên sâu</h3>
-            <p>Kiểm tra chiến lược trên dữ liệu lịch sử nhiều năm trước khi deploy. Bạn thấy kết quả thực trước khi bỏ
-              vốn.</p>
-          </div>
+        <div class="telegram-card" data-animate style="transition-delay:.2s">
+          <div class="telegram-tag telegram-tag-amber">SIGNAL BOT</div>
+          <h3>Binance Send Signal Bot</h3>
+          <p>Tự động quét và phát tín hiệu Long/Short trên Binance Futures theo khung H4, gửi thẳng vào Telegram.</p>
+        </div>
+        <div class="telegram-card" data-animate style="transition-delay:.25s">
+          <div class="telegram-tag telegram-tag-accent">FORWARD BOT</div>
+          <h3>Forward Message Bot</h3>
+          <p>Tự động chuyển tiếp tin nhắn/tín hiệu từ một group nguồn sang một hoặc nhiều group/kênh đích khác —
+            giữ nguyên định dạng, không cần copy tay.</p>
         </div>
       </div>
     </section>
 
-    <!-- ═══════════════════════ FLYWHEEL ═══════════════════════ -->
-    <section id="flywheel">
-      <div class="container flywheel-inner">
-        <div class="flywheel-text" data-animate>
-          <p class="section-label">VÒNG LẶP THÀNH CÔNG</p>
-          <h2>Mỗi thành công dẫn<br>đến dự án <span class="accent">tiếp theo.</span></h2>
-          <p class="body-text">
-            Chúng tôi không chỉ giao bot rồi biến mất. Mỗi bot là điểm khởi đầu của một quan hệ
-            dài hạn — theo dõi, tối ưu, mở rộng theo từng giai đoạn phát triển của bạn.
-          </p>
-          <blockquote class="pull-quote">
-            "Lần đầu chúng tôi build bot cho một trader với vốn $10K.
-            Hai năm sau, họ quản lý $400K và chúng tôi vẫn đồng hành."
-            <cite>— Growth Asset Trading</cite>
-          </blockquote>
-          <a href="#contact" class="btn btn-primary" style="margin-top:2rem">Bắt Đầu Hành Trình</a>
-        </div>
-        <div class="flywheel-diagram" data-animate style="transition-delay:.2s" aria-hidden="true">
-          <div class="flywheel-ring">
-            <div class="flywheel-step fw-step-1">
-              <div class="fw-dot"></div>
-              <span>Chiến lược</span>
+    <!-- ═══════════════════════ WEB & PRODUCT DESIGN ═══════════════════════ -->
+    <section id="web" class="section">
+      <p class="eyebrow" data-animate>// WEB &amp; PRODUCT DESIGN</p>
+      <h2 data-animate style="transition-delay:.05s">Một số web tôi đã tự tay dựng</h2>
+
+      <div class="web-grid">
+        <a href="#" class="web-card" data-animate style="transition-delay:.1s">
+          <div class="web-chrome"><span></span><span></span><span></span></div>
+          <img src="assets/showcase-aitrading.png" alt="Giao diện RichAITrading" class="web-shot">
+          <div class="web-body">
+            <div class="web-body-head">
+              <h3>RichAITrading</h3>
+              <span class="web-demo-link">Xem demo →</span>
             </div>
-            <div class="flywheel-step fw-step-2">
-              <div class="fw-dot"></div>
-              <span>Bot</span>
-            </div>
-            <div class="flywheel-step fw-step-3">
-              <div class="fw-dot"></div>
-              <span>Lợi nhuận</span>
-            </div>
-            <div class="flywheel-step fw-step-4">
-              <div class="fw-dot"></div>
-              <span>Mở rộng</span>
-            </div>
-            <div class="fw-center">
-              <svg viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M352 64C352 46.3 337.7 32 320 32C302.3 32 288 46.3 288 64L288 128L192 128C139 128 96 171 96 224L96 448C96 501 139 544 192 544L448 544C501 544 544 501 544 448L544 224C544 171 501 128 448 128L352 128L352 64zM160 432C160 418.7 170.7 408 184 408L216 408C229.3 408 240 418.7 240 432C240 445.3 229.3 456 216 456L184 456C170.7 456 160 445.3 160 432zM280 432C280 418.7 290.7 408 304 408L336 408C349.3 408 360 418.7 360 432C360 445.3 349.3 456 336 456L304 456C290.7 456 280 445.3 280 432zM400 432C400 418.7 410.7 408 424 408L456 408C469.3 408 480 418.7 480 432C480 445.3 469.3 456 456 456L424 456C410.7 456 400 445.3 400 432zM224 240C250.5 240 272 261.5 272 288C272 314.5 250.5 336 224 336C197.5 336 176 314.5 176 288C176 261.5 197.5 240 224 240zM368 288C368 261.5 389.5 240 416 240C442.5 240 464 261.5 464 288C464 314.5 442.5 336 416 336C389.5 336 368 314.5 368 288zM64 288C64 270.3 49.7 256 32 256C14.3 256 0 270.3 0 288L0 384C0 401.7 14.3 416 32 416C49.7 416 64 401.7 64 384L64 288zM608 256C590.3 256 576 270.3 576 288L576 384C576 401.7 590.3 416 608 416C625.7 416 640 401.7 640 384L640 288C640 270.3 625.7 256 608 256z" />
-              </svg>
-            </div>
-            <svg class="flywheel-arrows" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="120" cy="120" r="100" fill="none" stroke="rgba(245,166,35,0.15)" stroke-width="1"
-                stroke-dasharray="6 6" />
-            </svg>
+            <p>Nền tảng AI Trading full-stack: phân tích biểu đồ bằng Gemini Vision, nạp USDT qua MetaMask, gói
+              TradingView premium, hệ thống giới thiệu &amp; hoa hồng.</p>
           </div>
-        </div>
+        </a>
+
+        <a href="#" class="web-card" data-animate style="transition-delay:.15s">
+          <div class="web-chrome"><span></span><span></span><span></span></div>
+          <img src="assets/showcase-thetrader.png" alt="Giao diện Growth Asset Trading" class="web-shot">
+          <div class="web-body">
+            <div class="web-body-head">
+              <h3>Growth Asset Trading</h3>
+              <span class="web-demo-link">Xem demo →</span>
+            </div>
+            <p>Landing page dịch vụ code bot theo yêu cầu — kể câu chuyện qua pain point, quy trình 4 bước, case
+              study và form liên hệ.</p>
+          </div>
+        </a>
+
+        <a href="#" class="web-card" data-animate style="transition-delay:.2s">
+          <div class="web-chrome"><span></span><span></span><span></span></div>
+          <div class="web-decorative">
+            <div class="web-decorative-title">Hoàn phí Exness · Binance · Bybit · OKX</div>
+            <div class="web-decorative-pills">
+              <span class="pill">Exness</span>
+              <span class="pill">Binance</span>
+              <span class="pill">Bybit</span>
+              <span class="pill">OKX</span>
+            </div>
+          </div>
+          <div class="web-body">
+            <div class="web-body-head">
+              <h3>BackCom</h3>
+              <span class="web-demo-link">Xem demo →</span>
+            </div>
+            <p>Trang hoàn phí giao dịch đa sàn — trang so sánh riêng cho từng broker, FAQ song ngữ, chuyển đổi
+              Việt/Anh.</p>
+          </div>
+        </a>
       </div>
     </section>
 
-    <!-- ═══════════════════════ RESULTS ═══════════════════════ -->
-    <section id="results" class="section-alt">
-      <div class="container">
-        <div class="section-header centered" data-animate>
-          <p class="section-label">KẾT QUẢ ĐÃ ĐẠT ĐƯỢC</p>
-          <h2>Nhà giao dịch như bạn đã thấy<br><span class="accent">những kết quả này.</span></h2>
+    <!-- ═══════════════════════ SERVICES ═══════════════════════ -->
+    <section id="services" class="section">
+      <p class="eyebrow" data-animate>// DỊCH VỤ</p>
+      <h2 data-animate style="transition-delay:.05s">Nhận code theo yêu cầu</h2>
+
+      <div class="services-grid">
+        <div class="service-card" data-animate style="transition-delay:.1s">
+          <div class="service-num">01</div>
+          <h3>EA Cơ Bản</h3>
+          <p>1 chiến lược, 1 symbol, backtest report đầy đủ.</p>
         </div>
-        <div class="stats-grid">
-          <div class="stat-card" data-animate style="transition-delay:.05s">
-            <div class="stat-value" data-count="400" data-prefix="$" data-suffix="K+">$0K+</div>
-            <div class="stat-label">Lợi nhuận tích lũy cho client</div>
-            <div class="stat-desc">Tổng lợi nhuận đã ghi nhận từ các bot đang vận hành</div>
-          </div>
-          <div class="stat-card" data-animate style="transition-delay:.1s">
-            <div class="stat-value" data-count="6" data-suffix="+">0+</div>
-            <div class="stat-label">Sàn giao dịch tích hợp</div>
-            <div class="stat-desc">Binance, Bybit, OKX, Bitget, MEXC, Gate.io</div>
-          </div>
-          <div class="stat-card" data-animate style="transition-delay:.15s">
-            <div class="stat-value" data-count="78" data-suffix="%">0%</div>
-            <div class="stat-label">Tỷ lệ lệnh thắng trung bình</div>
-            <div class="stat-desc">Trung bình trên tất cả bot đang hoạt động</div>
-          </div>
-          <div class="stat-card" data-animate style="transition-delay:.2s">
-            <div class="stat-value text-success" data-count="0" data-suffix="%">0%</div>
-            <div class="stat-label">Can thiệp cảm xúc</div>
-            <div class="stat-desc">Bot không có cảm xúc — thực thi hoàn hảo mọi lúc</div>
-          </div>
+        <div class="service-card service-card-featured" data-animate style="transition-delay:.15s">
+          <div class="service-num">02 — PHỔ BIẾN</div>
+          <h3>EA Nâng Cao</h3>
+          <p>Multi-strategy, panel GUI, Telegram alert, license key.</p>
+        </div>
+        <div class="service-card" data-animate style="transition-delay:.2s">
+          <div class="service-num">03</div>
+          <h3>Web &amp; Automation</h3>
+          <p>Landing page, signal bot, forward bot, tool nội bộ theo yêu cầu.</p>
         </div>
       </div>
     </section>
 
     <!-- ═══════════════════════ PROCESS ═══════════════════════ -->
-    <section id="process">
-      <div class="container">
-        <div class="section-header centered" data-animate>
-          <p class="section-label">QUY TRÌNH LÀM VIỆC</p>
-          <h2>Từ ý tưởng đến <span class="accent">bot chạy thực tế</span><br>qua 4 bước rõ ràng.</h2>
-        </div>
-        <div class="process-timeline">
-          <div class="process-step" data-animate style="transition-delay:.05s">
-            <div class="process-number">
-              <div class="process-week">Bước 1</div>
-            </div>
-            <div class="process-content">
-              <h3>Tư vấn chiến lược</h3>
-              <p>Chúng tôi tìm hiểu chiến lược, khẩu vị rủi ro, mục tiêu và thị trường bạn muốn giao dịch. Đầu ra: bản
-                mô tả kỹ thuật chi tiết.</p>
-            </div>
-          </div>
-          <div class="process-connector" aria-hidden="true"></div>
-          <div class="process-step" data-animate style="transition-delay:.1s">
-            <div class="process-number">
-              <div class="process-week">Bước 2</div>
-            </div>
-            <div class="process-content">
-              <h3>Thiết kế & Backtesting</h3>
-              <p>Build bot theo đúng spec đã thống nhất. Chạy backtesting trên dữ liệu lịch sử nhiều năm, trình bày kết
-                quả để bạn xác nhận.</p>
-            </div>
-          </div>
-          <div class="process-connector" aria-hidden="true"></div>
-          <div class="process-step" data-animate style="transition-delay:.15s">
-            <div class="process-number">
-              <div class="process-week">Bước 3</div>
-            </div>
-            <div class="process-content">
-              <h3>Triển khai & Kiểm tra</h3>
-              <p>Deploy bot trên tài khoản testnet trước, sau đó chuyển sang live với vốn nhỏ. Theo dõi sát 24/7 trong
-                giai đoạn đầu.</p>
-            </div>
-          </div>
-          <div class="process-connector" aria-hidden="true"></div>
-          <div class="process-step" data-animate style="transition-delay:.2s">
-            <div class="process-number">
-              <div class="process-week">Bước 4</div>
-            </div>
-            <div class="process-content">
-              <h3>Theo dõi & Tối ưu</h3>
-              <p>Định kỳ review hiệu suất, điều chỉnh parameters khi thị trường thay đổi. Bot luôn được tối ưu theo điều
-                kiện thị trường mới nhất.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section class="section">
+      <p class="eyebrow" data-animate>// QUY TRÌNH</p>
+      <h2 data-animate style="transition-delay:.05s">Từ ý tưởng đến bot chạy thực tế</h2>
 
-    <!-- ═══════════════════════ PORTFOLIO ═══════════════════════ -->
-    <section id="portfolio" class="section-alt">
-      <div class="container">
-        <div class="section-header" data-animate>
-          <p class="section-label">CASE STUDIES</p>
-          <h2>Nơi chúng tôi đã triển khai.<br><span class="accent">Điều đã thay đổi.</span></h2>
+      <div class="process-grid">
+        <div class="process-card" data-animate style="transition-delay:.1s">
+          <div class="process-step-label">BƯỚC 01</div>
+          <h3>Tư vấn chiến lược</h3>
+          <p>Trao đổi mục tiêu, symbol, khẩu vị rủi ro.</p>
         </div>
-        <div class="portfolio-grid">
-          <article class="portfolio-card" data-animate style="transition-delay:.05s">
-            <div class="portfolio-header">
-              <span class="tag tag-orange">Crypto · Futures</span>
-              <span class="portfolio-exchange">Binance</span>
-            </div>
-            <h3>Grid Bot — BTC/USDT Perpetual</h3>
-            <p>Trader quản lý vốn cá nhân muốn tận dụng sideway market mà không cần theo dõi liên tục.</p>
-            <div class="portfolio-stats">
-              <div class="p-stat">
-                <span class="p-stat-value">+34%</span>
-                <span class="p-stat-label">Lợi nhuận / tháng</span>
-              </div>
-              <div class="p-stat">
-                <span class="p-stat-value">82%</span>
-                <span class="p-stat-label">Win rate</span>
-              </div>
-              <div class="p-stat">
-                <span class="p-stat-value">2 tuần</span>
-                <span class="p-stat-label">Thời gian triển khai</span>
-              </div>
-            </div>
-          </article>
-          <article class="portfolio-card" data-animate style="transition-delay:.1s">
-            <div class="portfolio-header">
-              <span class="tag tag-purple">Crypto · Spot</span>
-              <span class="portfolio-exchange">Bybit</span>
-            </div>
-            <h3>DCA Bot — Multi-pair Portfolio</h3>
-            <p>Nhà đầu tư muốn tự động hóa chiến lược DCA trên 8 cặp tiền tệ cùng lúc với quản lý rủi ro nghiêm ngặt.
-            </p>
-            <div class="portfolio-stats">
-              <div class="p-stat">
-                <span class="p-stat-value">+18%</span>
-                <span class="p-stat-label">Outperform vs. manual</span>
-              </div>
-              <div class="p-stat">
-                <span class="p-stat-value">8 pairs</span>
-                <span class="p-stat-label">Đồng thời</span>
-              </div>
-              <div class="p-stat">
-                <span class="p-stat-value">0 can thiệp</span>
-                <span class="p-stat-label">6 tháng đầu</span>
-              </div>
-            </div>
-          </article>
-          <article class="portfolio-card" data-animate style="transition-delay:.15s">
-            <div class="portfolio-header">
-              <span class="tag tag-orange">Crypto · Futures</span>
-              <span class="portfolio-exchange">OKX</span>
-            </div>
-            <h3>Scalping Bot — Trend Following</h3>
-            <p>Trader chuyên scalping muốn bot thay thế hoàn toàn việc giao dịch thủ công trên khung H1.</p>
-            <div class="portfolio-stats">
-              <div class="p-stat">
-                <span class="p-stat-value">+$120K</span>
-                <span class="p-stat-label">Lợi nhuận 6 tháng</span>
-              </div>
-              <div class="p-stat">
-                <span class="p-stat-value">75%</span>
-                <span class="p-stat-label">Win rate</span>
-              </div>
-              <div class="p-stat">
-                <span class="p-stat-value">24/7</span>
-                <span class="p-stat-label">Không nghỉ</span>
-              </div>
-            </div>
-          </article>
+        <div class="process-card" data-animate style="transition-delay:.15s">
+          <div class="process-step-label">BƯỚC 02</div>
+          <h3>Thiết kế &amp; Backtesting</h3>
+          <p>Code EA/bot, kiểm tra trên dữ liệu lịch sử.</p>
         </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════ ABOUT ═══════════════════════ -->
-    <section id="about">
-      <div class="container about-inner">
-        <div class="about-left" data-animate>
-          <p class="section-label">VỀ CHÚNG TÔI</p>
-          <h2>Nhiều năm giúp nhà giao dịch<br><span class="accent">tạo ra kết quả lớn.</span></h2>
-          <p class="body-text">
-            Growth Asset Trading được thành lập bởi những trader và developer có kinh nghiệm thực chiến
-            trên thị trường Crypto và Forex. Chúng tôi hiểu sâu sắc cả hai phía: lý thuyết chiến lược
-            lẫn thực tế thực thi.
-          </p>
-          <p class="body-text">
-            Không bán tín hiệu. Không copy-trade. Chúng tôi chỉ làm một việc:
-            <strong class="text-primary">biến chiến lược của bạn thành bot hoạt động thực tế</strong>,
-            được kiểm chứng bằng dữ liệu và vận hành bởi công nghệ.
-          </p>
-          <p class="body-text">
-            Mỗi khách hàng nhận được sự chú ý cá nhân hóa. Chúng tôi không cần hàng trăm client —
-            chúng tôi cần những client đúng.
-          </p>
+        <div class="process-card" data-animate style="transition-delay:.2s">
+          <div class="process-step-label">BƯỚC 03</div>
+          <h3>Triển khai &amp; Kiểm tra</h3>
+          <p>Chạy demo, tinh chỉnh tham số thực tế.</p>
         </div>
-        <div class="about-right" data-animate style="transition-delay:.15s">
-          <div class="about-stats-grid">
-            <div class="about-stat">
-              <div class="about-stat-value">5+</div>
-              <div class="about-stat-label">Năm kinh nghiệm</div>
-            </div>
-            <div class="about-stat">
-              <div class="about-stat-value">6</div>
-              <div class="about-stat-label">Sàn tích hợp</div>
-            </div>
-            <div class="about-stat">
-              <div class="about-stat-value">500+</div>
-              <div class="about-stat-label">Lệnh/ngày</div>
-            </div>
-            <div class="about-stat">
-              <div class="about-stat-value">100%</div>
-              <div class="about-stat-label">Custom</div>
-            </div>
-          </div>
-          <div class="founder-note">
-            <div class="founder-avatar" aria-hidden="true">LH</div>
-            <div>
-              <div class="founder-name">Long HD</div>
-              <div class="founder-role">Founder · <a href="https://t.me/longhdtrader" target="_blank" rel="noopener"
-                  class="accent-link">@longhdtrader</a></div>
-              <p class="founder-bio">Trader & developer với nhiều năm kinh nghiệm xây dựng hệ thống giao dịch tự động
-                trên thị trường Crypto.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════ SERVICES ═══════════════════════ -->
-    <section id="services" class="section-alt">
-      <div class="container">
-        <div class="section-header centered" data-animate>
-          <p class="section-label">GÓI DỊCH VỤ</p>
-          <h2>Xây dựng cho nhà giao dịch với<br><span class="accent">mục tiêu đầy tham vọng.</span></h2>
-        </div>
-        <div class="services-grid">
-          <div class="service-card" data-animate style="transition-delay:.05s">
-            <div class="service-tag">Starter</div>
-            <h3 class="service-name">Starter Bot</h3>
-            <p class="service-desc">Phù hợp với trader cá nhân muốn tự động hóa một chiến lược đã có sẵn.</p>
-            <ul class="service-features">
-              <li>1 chiến lược, 1 sàn giao dịch</li>
-              <li>Backtesting chi tiết</li>
-              <li>Hỗ trợ triển khai & go-live</li>
-              <li>Theo dõi 1 tháng đầu</li>
-              <li>Báo cáo hiệu suất hàng tuần</li>
-            </ul>
-            <a href="#contact" class="btn btn-ghost btn-full">Liên Hệ Tư Vấn</a>
-          </div>
-          <div class="service-card service-card-featured" data-animate style="transition-delay:.1s">
-            <div class="service-tag tag-accent">Pro</div>
-            <div class="service-popular">Phổ biến nhất</div>
-            <h3 class="service-name">Pro Bot</h3>
-            <p class="service-desc">Cho trader nghiêm túc muốn vận hành hệ thống giao dịch đa chiến lược.</p>
-            <ul class="service-features">
-              <li>Nhiều chiến lược, nhiều cặp tiền</li>
-              <li>Dashboard theo dõi real-time</li>
-              <li>Alert Telegram tự động</li>
-              <li>Tối ưu parameters định kỳ</li>
-              <li>Hỗ trợ ưu tiên</li>
-              <li>Báo cáo hiệu suất chi tiết</li>
-            </ul>
-            <a href="#contact" class="btn btn-primary btn-full">Liên Hệ Tư Vấn</a>
-          </div>
-          <div class="service-card" data-animate style="transition-delay:.15s">
-            <div class="service-tag">Enterprise</div>
-            <h3 class="service-name">Enterprise</h3>
-            <p class="service-desc">Giải pháp toàn diện cho quỹ đầu tư và trader quản lý vốn lớn.</p>
-            <ul class="service-features">
-              <li>Hệ thống full-custom</li>
-              <li>Dedicated support</li>
-              <li>White-label option</li>
-              <li>Tích hợp API riêng</li>
-              <li>SLA cam kết uptime</li>
-              <li>Bảo mật & audit</li>
-            </ul>
-            <a href="#contact" class="btn btn-ghost btn-full">Liên Hệ Tư Vấn</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════ CONTACT ═══════════════════════ -->
-    <section id="contact">
-      <div class="contact-glow" aria-hidden="true"></div>
-      <div class="container contact-inner">
-        <div class="contact-left" data-animate>
-          <p class="section-label">BẮT ĐẦU NGAY HÔM NAY</p>
-          <h2>Hành trình bắt đầu<br><span class="accent">bằng một cuộc trò chuyện.</span></h2>
-          <p class="body-text">
-            Không cần cam kết ngay. Chỉ cần chia sẻ chiến lược và mục tiêu của bạn — chúng tôi sẽ
-            cho bạn biết liệu bot có phải là bước đi đúng đắn hay không.
-          </p>
-          <div class="contact-channels">
-            <a href="tel:0866797299" class="contact-channel">
-              <div class="channel-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path
-                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1 19.79 19.79 0 0 1 1.61 4.5 2 2 0 0 1 3.59 2.32h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.09 6.09l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
-                </svg>
-              </div>
-              <div>
-                <div class="channel-label">Điện thoại</div>
-                <div class="channel-value">0866 797 299</div>
-              </div>
-            </a>
-            <a href="https://t.me/longhdtrader" target="_blank" rel="noopener" class="contact-channel">
-              <div class="channel-icon channel-icon-tg">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path
-                    d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
-                </svg>
-              </div>
-              <div>
-                <div class="channel-label">Telegram</div>
-                <div class="channel-value">@longhdtrader</div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="contact-right" data-animate style="transition-delay:.15s">
-          <form class="contact-form" id="contact-form" novalidate>
-            <div class="form-group">
-              <label for="name">Họ và tên</label>
-              <input type="text" id="name" name="name" placeholder="Nguyễn Văn A" required autocomplete="name">
-              <span class="form-error" id="name-error"></span>
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="[EMAIL_ADDRESS]" required autocomplete="email">
-              <span class="form-error" id="email-error"></span>
-            </div>
-            <div class="form-group">
-              <label for="phone">Số điện thoại</label>
-              <input type="tel" id="phone" name="phone" placeholder="0812 345 678" autocomplete="tel">
-            </div>
-            <div class="form-group">
-              <label for="strategy">Mô tả chiến lược của bạn</label>
-              <textarea id="strategy" name="strategy" rows="4"
-                placeholder="Bạn đang trade thị trường nào? Chiến lược gì? Vốn ở mức nào?..." required></textarea>
-              <span class="form-error" id="strategy-error"></span>
-            </div>
-            <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
-              <span id="submit-text">Gửi Yêu Cầu Tư Vấn</span>
-            </button>
-            <div class="form-success" id="form-success" aria-live="polite"></div>
-          </form>
+        <div class="process-card" data-animate style="transition-delay:.25s">
+          <div class="process-step-label">BƯỚC 04</div>
+          <h3>Theo dõi &amp; Tối ưu</h3>
+          <p>Hỗ trợ, tối ưu tham số lâu dài.</p>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
-  <footer id="footer">
-    <div class="container footer-inner">
+  <!-- ═══════════════════════ CONTACT / FOOTER ═══════════════════════ -->
+  <footer id="contact" class="contact">
+    <div class="contact-top" data-animate>
+      <div>
+        <p class="eyebrow">// LIÊN HỆ</p>
+        <h2>Có ý tưởng bot? Bắt đầu bằng một tin nhắn.</h2>
+      </div>
+      <div class="contact-ctas">
+        <a href="https://t.me/longhdtrader" target="_blank" rel="noopener" class="btn btn-primary">Nhắn
+          Telegram</a>
+        <span class="contact-phone">0866 797 299</span>
+      </div>
+    </div>
+    <div class="contact-bottom">
       <div class="footer-brand">
-        <a href="#hero" class="nav-logo footer-logo">
-          <svg class="nav-logo-icon" viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path
-              d="M352 64C352 46.3 337.7 32 320 32C302.3 32 288 46.3 288 64L288 128L192 128C139 128 96 171 96 224L96 448C96 501 139 544 192 544L448 544C501 544 544 501 544 448L544 224C544 171 501 128 448 128L352 128L352 64zM160 432C160 418.7 170.7 408 184 408L216 408C229.3 408 240 418.7 240 432C240 445.3 229.3 456 216 456L184 456C170.7 456 160 445.3 160 432zM280 432C280 418.7 290.7 408 304 408L336 408C349.3 408 360 418.7 360 432C360 445.3 349.3 456 336 456L304 456C290.7 456 280 445.3 280 432zM400 432C400 418.7 410.7 408 424 408L456 408C469.3 408 480 418.7 480 432C480 445.3 469.3 456 456 456L424 456C410.7 456 400 445.3 400 432zM224 240C250.5 240 272 261.5 272 288C272 314.5 250.5 336 224 336C197.5 336 176 314.5 176 288C176 261.5 197.5 240 224 240zM368 288C368 261.5 389.5 240 416 240C442.5 240 464 261.5 464 288C464 314.5 442.5 336 416 336C389.5 336 368 314.5 368 288zM64 288C64 270.3 49.7 256 32 256C14.3 256 0 270.3 0 288L0 384C0 401.7 14.3 416 32 416C49.7 416 64 401.7 64 384L64 288zM608 256C590.3 256 576 270.3 576 288L576 384C576 401.7 590.3 416 608 416C625.7 416 640 401.7 640 384L640 288C640 270.3 625.7 256 608 256z" />
-          </svg>
-          <span class="nav-logo-text">Growth Asset<span class="accent"> Trading</span></span>
-        </a>
-        <p class="footer-tagline">Bot trading chuyên nghiệp — Kỷ luật tuyệt đối, 24/7.</p>
+        <img src="assets/logo.jpeg" alt="" width="16" height="16">
+        <span>© 2026 Growth Asset Trading</span>
       </div>
-      <nav class="footer-nav" aria-label="Footer navigation">
-        <a href="#pain">Dịch Vụ</a>
-        <a href="#results">Kết Quả</a>
-        <a href="#process">Quy Trình</a>
-        <a href="#about">Về Chúng Tôi</a>
-        <a href="#contact">Liên Hệ</a>
-      </nav>
-      <div class="footer-social">
-        <a href="https://t.me/longhdtrader" target="_blank" rel="noopener" aria-label="Telegram">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
-          </svg>
-        </a>
-        <a href="#" aria-label="Twitter / X">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-          </svg>
-        </a>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2026 Growth Asset Trading. All rights reserved.</p>
-        <p class="footer-disclaimer">Bot trading có rủi ro. Hiệu suất quá khứ không đảm bảo kết quả tương lai.</p>
+      <div class="footer-meta">
+        <span>Telegram: @longhdtrader</span>
+        <span>0866 797 299</span>
       </div>
     </div>
   </footer>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body{margin:0;background:#0a0a0a;font-family:'IBM Plex Sans',sans-serif;color:#eef2ee}
+  a{color:#16a34a;text-decoration:none}
+  a:hover{color:#4ade80}
+  ::selection{background:#16a34a;color:#0a0a0a}
+</style>
+</helmet>
+
+<div style="max-width:1280px;margin:0 auto" data-screen-label="Trang giới thiệu">
+
+  <!-- top bar -->
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:20px 40px;border-bottom:1px solid #232823;position:sticky;top:0;background:rgba(10,14,18,.92);backdrop-filter:blur(8px);z-index:10">
+    <div style="display:flex;align-items:center;gap:10px;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:16px;letter-spacing:.02em;color:#16a34a">
+      <img src="logo.jpeg" style="width:26px;height:26px;border-radius:6px;object-fit:cover;display:block">Growth Asset Trading
+    </div>
+    <div style="display:flex;gap:30px;font-size:13.5px;color:#92a196">
+      <a href="#portfolio" style="color:inherit">Sản phẩm</a>
+      <a href="#telegram" style="color:inherit">Telegram Tools</a>
+      <a href="#web" style="color:inherit">Web</a>
+      <a href="#services" style="color:inherit">Dịch vụ</a>
+      <a href="#contact" style="color:inherit">Liên hệ</a>
+    </div>
+    <a href="https://t.me/longhdtrader" style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;padding:9px 18px;border:1px solid #16a34a;color:#16a34a;border-radius:4px">Telegram @longhdtrader</a>
+  </div>
+
+  <!-- hero -->
+  <div style="position:relative;padding:88px 40px 68px;overflow:hidden;background:linear-gradient(135deg,#0a0a0a 0%,#101c15 100%)">
+    <div style="position:absolute;top:-120px;right:-100px;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,rgba(21,128,61,.18),transparent 70%);filter:blur(10px)"></div>
+    <div style="position:absolute;bottom:-160px;left:-80px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(20,90,50,.10),transparent 70%);filter:blur(10px)"></div>
+    <div style="position:relative;font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.14em;color:#7d9186;margin-bottom:22px">// TRADER &amp; SOFTWARE ENGINEER — 100% TỰ TAY CODE BOT</div>
+    <div style="position:relative;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:48px;line-height:1.18;max-width:800px;color:#f2f5ee">
+      Tôi biến chiến lược giao dịch<br>thành <span style="color:#16a34a">bot chạy 24/7,</span> không cảm xúc, không sai lệch.
+    </div>
+    <div style="position:relative;font-size:16.5px;line-height:1.75;color:#9db0a2;max-width:620px;margin-top:22px">
+      Trader kỳ cựu, đồng thời là kỹ sư phần mềm — tôi tự thiết kế chiến lược, tự viết toàn bộ code EA/bot của mình trên MetaTrader 5, Telegram, và tự tay dựng cả những trang web sản phẩm đi kèm.
+    </div>
+    <div style="position:relative;display:flex;gap:14px;margin-top:34px">
+      <a href="#portfolio" style="padding:14px 26px;background:#16a34a;color:#0a0a0a;font-weight:600;border-radius:4px;font-size:14.5px;display:inline-block">Xem danh mục sản phẩm →</a>
+      <a href="#contact" style="padding:14px 26px;border:1px solid #2b4536;color:#eef2ee;border-radius:4px;font-size:14.5px;font-family:'IBM Plex Mono',monospace;display:inline-block">Đặt bot riêng</a>
+    </div>
+  </div>
+
+  <!-- stats strip -->
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #232823;border-bottom:1px solid #232823">
+    <div style="padding:26px 40px;border-right:1px solid #232823"><div style="font-family:'IBM Plex Mono',monospace;font-size:28px;font-weight:600;color:#16a34a">11+</div><div style="font-size:12.5px;color:#92a196;margin-top:6px">EA &amp; bot đã triển khai</div></div>
+    <div style="padding:26px 40px;border-right:1px solid #232823"><div style="font-family:'IBM Plex Mono',monospace;font-size:28px;font-weight:600;color:#16a34a">3</div><div style="font-size:12.5px;color:#92a196;margin-top:6px">Nền tảng: MT5 · Telegram · Web</div></div>
+    <div style="padding:26px 40px;border-right:1px solid #232823"><div style="font-family:'IBM Plex Mono',monospace;font-size:28px;font-weight:600;color:#16a34a">6+</div><div style="font-size:12.5px;color:#92a196;margin-top:6px">Sàn/broker tích hợp</div></div>
+    <div style="padding:26px 40px"><div style="font-family:'IBM Plex Mono',monospace;font-size:28px;font-weight:600;color:#16a34a">100%</div><div style="font-size:12.5px;color:#92a196;margin-top:6px">Code tự viết, không thuê ngoài</div></div>
+  </div>
+
+  <!-- PORTFOLIO — EA khách hàng, with performance -->
+  <div id="portfolio" style="padding:64px 40px 20px;scroll-margin-top:70px">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.14em;color:#7d9186;margin-bottom:10px">// PORTFOLIO — EA &amp; BOT ĐÃ XÂY DỰNG</div>
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap">
+      <div style="font-size:27px;font-weight:600;color:#f2f5ee">EA &amp; bot đã xây dựng — cho khách hàng và cho chính mình</div>
+      <div style="font-size:12px;color:#6b7d70;font-family:'IBM Plex Mono',monospace;border:1px solid #1f3324;padding:5px 10px;border-radius:4px">⚠ số liệu hiệu suất bên dưới là dữ liệu minh hoạ, sẽ cập nhật báo cáo backtest/live thực tế</div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:28px">
+
+      <div style="border:1px solid #232823;background:#121712;border-radius:6px;padding:22px">
+        <div style="display:flex;justify-content:space-between;align-items:center"><div style="font-weight:600;font-size:16px">DCA Basket EA</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#16a34a;border:1px solid #1f3324;padding:2px 8px;border-radius:20px">XAUUSD</div></div>
+        <div style="font-size:13px;color:#92a196;margin-top:8px;line-height:1.6">DCA 2 chiều Buy/Sell, News Filter qua MT5 Calendar, Capital Guard theo % vốn, Fast Basket Close.</div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid #232823">
+          <div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;color:#16a34a">68%</div><div style="font-size:11px;color:#6b7d70">Win rate</div></div>
+          <div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;color:#16a34a">1.8</div><div style="font-size:11px;color:#6b7d70">Profit factor</div></div>
+          <div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;color:#16a34a">11%</div><div style="font-size:11px;color:#6b7d70">Max drawdown</div></div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #232823;background:#121712;border-radius:6px;padding:22px">
+        <div style="display:flex;justify-content:space-between;align-items:center"><div style="font-weight:600;font-size:16px">HedgingBot</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#16a34a;border:1px solid #1f3324;padding:2px 8px;border-radius:20px">XAUUSD</div></div>
+        <div style="font-size:13px;color:#92a196;margin-top:8px;line-height:1.6">Dual Straddle Breakout, trailing SL 6 tầng, state machine tự phục hồi khi khởi động lại.</div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid #232823">
+          <div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;color:#16a34a">61%</div><div style="font-size:11px;color:#6b7d70">Win rate</div></div>
+          <div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;color:#16a34a">1.6</div><div style="font-size:11px;color:#6b7d70">Profit factor</div></div>
+          <div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;color:#16a34a">14%</div><div style="font-size:11px;color:#6b7d70">Max drawdown</div></div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #232823;background:#121712;border-radius:6px;padding:22px">
+        <div style="display:flex;justify-content:space-between;align-items:center"><div style="font-weight:600;font-size:16px">SMC UTBot EA</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#16a34a;border:1px solid #1f3324;padding:2px 8px;border-radius:20px">ANY</div></div>
+        <div style="font-size:13px;color:#92a196;margin-top:8px;line-height:1.6">Smart Money Concepts + Order Block + FVG + UT Bot + Fibonacci + HalfTrend trong một EA.</div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid #232823">
+          <div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;color:#16a34a">64%</div><div style="font-size:11px;color:#6b7d70">Win rate</div></div>
+          <div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;color:#16a34a">1.7</div><div style="font-size:11px;color:#6b7d70">Profit factor</div></div>
+          <div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;color:#16a34a">13%</div><div style="font-size:11px;color:#6b7d70">Max drawdown</div></div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #232823;background:#121712;border-radius:6px;padding:22px">
+        <div style="display:flex;justify-content:space-between;align-items:center"><div style="font-weight:600;font-size:16px">UT Bot EA</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#16a34a;border:1px solid #1f3324;padding:2px 8px;border-radius:20px">ANY</div></div>
+        <div style="font-size:13px;color:#92a196;margin-top:8px;line-height:1.6">Tín hiệu UT Bot với ATR Trailing Stop nội bộ, 4 tầng trailing SL theo lợi nhuận.</div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid #232823">
+          <div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;color:#16a34a">59%</div><div style="font-size:11px;color:#6b7d70">Win rate</div></div>
+          <div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;color:#16a34a">1.5</div><div style="font-size:11px;color:#6b7d70">Profit factor</div></div>
+          <div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;color:#16a34a">15%</div><div style="font-size:11px;color:#6b7d70">Max drawdown</div></div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #232823;background:#121712;border-radius:6px;padding:22px">
+        <div style="display:flex;justify-content:space-between;align-items:center"><div style="font-weight:600;font-size:16px">M5Bot</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#16a34a;border:1px solid #1f3324;padding:2px 8px;border-radius:20px">ANY</div></div>
+        <div style="font-size:13px;color:#92a196;margin-top:8px;line-height:1.6">Nhận diện mẫu hình nến M5 kết hợp SL/TP quản lý rủi ro chặt chẽ.</div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid #232823">
+          <div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;color:#16a34a">57%</div><div style="font-size:11px;color:#6b7d70">Win rate</div></div>
+          <div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;color:#16a34a">1.4</div><div style="font-size:11px;color:#6b7d70">Profit factor</div></div>
+          <div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;color:#16a34a">17%</div><div style="font-size:11px;color:#6b7d70">Max drawdown</div></div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #232823;background:#121712;border-radius:6px;padding:22px">
+        <div style="display:flex;justify-content:space-between;align-items:center"><div style="font-weight:600;font-size:16px">Bot Duy Dương</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#16a34a;border:1px solid #1f3324;padding:2px 8px;border-radius:20px">ANY</div></div>
+        <div style="font-size:13px;color:#92a196;margin-top:8px;line-height:1.6">Bollinger Bands Breakout kết hợp EMA và Stochastic để lọc tín hiệu vào lệnh.</div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid #232823">
+          <div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;color:#16a34a">60%</div><div style="font-size:11px;color:#6b7d70">Win rate</div></div>
+          <div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;color:#16a34a">1.5</div><div style="font-size:11px;color:#6b7d70">Profit factor</div></div>
+          <div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;color:#16a34a">14%</div><div style="font-size:11px;color:#6b7d70">Max drawdown</div></div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #232823;background:#121712;border-radius:6px;padding:22px">
+        <div style="display:flex;justify-content:space-between;align-items:center"><div style="font-weight:600;font-size:16px">FiboBot</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#16a34a;border:1px solid #1f3324;padding:2px 8px;border-radius:20px">ANY</div></div>
+        <div style="font-size:13px;color:#92a196;margin-top:8px;line-height:1.6">Fibonacci Retracement kết hợp Pivot Point, cấu hình riêng cho 8 symbol khác nhau.</div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid #232823">
+          <div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;color:#16a34a">62%</div><div style="font-size:11px;color:#6b7d70">Win rate</div></div>
+          <div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;color:#16a34a">1.6</div><div style="font-size:11px;color:#6b7d70">Profit factor</div></div>
+          <div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;color:#16a34a">15%</div><div style="font-size:11px;color:#6b7d70">Max drawdown</div></div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #232823;background:#121712;border-radius:6px;padding:22px">
+        <div style="display:flex;justify-content:space-between;align-items:center"><div style="font-weight:600;font-size:16px">ComBot</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#16a34a;border:1px solid #1f3324;padding:2px 8px;border-radius:20px">ANY</div></div>
+        <div style="font-size:13px;color:#92a196;margin-top:8px;line-height:1.6">Lọc tín hiệu bằng ADX, quản lý đa vị thế cùng lúc, theo dõi P&amp;L theo ngày.</div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid #232823">
+          <div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;color:#16a34a">58%</div><div style="font-size:11px;color:#6b7d70">Win rate</div></div>
+          <div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;color:#16a34a">1.5</div><div style="font-size:11px;color:#6b7d70">Profit factor</div></div>
+          <div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;color:#16a34a">16%</div><div style="font-size:11px;color:#6b7d70">Max drawdown</div></div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #232823;background:#121712;border-radius:6px;padding:22px">
+        <div style="display:flex;justify-content:space-between;align-items:center"><div style="font-weight:600;font-size:16px">PropfirmBot &amp; TheCapitalBot</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#16a34a;border:1px solid #1f3324;padding:2px 8px;border-radius:20px">ANY</div></div>
+        <div style="font-size:13px;color:#92a196;margin-top:8px;line-height:1.6">Trợ lý giao dịch thủ công: EMA đa khung thời gian, kéo TP/SL trên chart, license key theo tháng.</div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px;padding-top:14px;border-top:1px solid #232823">
+          <div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;color:#16a34a">—</div><div style="font-size:11px;color:#6b7d70">Win rate</div></div>
+          <div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;color:#16a34a">—</div><div style="font-size:11px;color:#6b7d70">Profit factor</div></div>
+          <div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;color:#16a34a">15$</div><div style="font-size:11px;color:#6b7d70">Rủi ro/lệnh</div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TELEGRAM TOOLS -->
+  <div id="telegram" style="padding:56px 40px 20px;scroll-margin-top:70px">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.14em;color:#7d9186;margin-bottom:10px">// TELEGRAM AUTOMATION</div>
+    <div style="font-size:27px;font-weight:600;color:#f2f5ee;margin-bottom:10px">Bộ công cụ Telegram cho trader</div>
+    <div style="font-size:14.5px;color:#92a196;max-width:680px;line-height:1.7;margin-bottom:28px">3 bot xử lý luồng tín hiệu &amp; tin nhắn — từ tự động phát tín hiệu, gửi cảnh báo, đến chuyển tiếp tin nhắn giữa các nhóm/kênh khác nhau.</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+      <div style="border:1px solid #232823;background:#121712;border-radius:6px;padding:22px">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#fbbf24;margin-bottom:10px">SIGNAL BOT</div>
+        <div style="font-weight:600;font-size:16px;margin-bottom:8px">SendSignal Bot</div>
+        <div style="font-size:13px;color:#92a196;line-height:1.65">Gửi tín hiệu giao dịch tự động vào group/kênh Telegram theo thời gian thực khi có setup đạt điều kiện.</div>
+      </div>
+      <div style="border:1px solid #232823;background:#121712;border-radius:6px;padding:22px">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#fbbf24;margin-bottom:10px">SIGNAL BOT</div>
+        <div style="font-weight:600;font-size:16px;margin-bottom:8px">Binance Send Signal Bot</div>
+        <div style="font-size:13px;color:#92a196;line-height:1.65">Tự động quét và phát tín hiệu Long/Short trên Binance Futures theo khung H4, gửi thẳng vào Telegram.</div>
+      </div>
+      <div style="border:1px solid #232823;background:#121712;border-radius:6px;padding:22px">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#16a34a;margin-bottom:10px">FORWARD BOT</div>
+        <div style="font-weight:600;font-size:16px;margin-bottom:8px">Forward Message Bot</div>
+        <div style="font-size:13px;color:#92a196;line-height:1.65">Tự động chuyển tiếp tin nhắn/tín hiệu từ một group nguồn sang một hoặc nhiều group/kênh đích khác — giữ nguyên định dạng, không cần copy tay.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WEB PORTFOLIO -->
+  <div id="web" style="padding:56px 40px 20px;scroll-margin-top:70px">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.14em;color:#7d9186;margin-bottom:10px">// WEB &amp; PRODUCT DESIGN</div>
+    <div style="font-size:27px;font-weight:600;color:#f2f5ee;margin-bottom:28px">Một số web tôi đã tự tay dựng</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+
+      <a href="aitrading/landing.html" style="display:block;border:1px solid #232823;background:#121712;border-radius:8px;overflow:hidden">
+        <div style="height:34px;background:#0f120f;border-bottom:1px solid #232823;display:flex;align-items:center;gap:6px;padding:0 12px">
+          <span style="width:9px;height:9px;border-radius:50%;background:#2a3742"></span><span style="width:9px;height:9px;border-radius:50%;background:#2a3742"></span><span style="width:9px;height:9px;border-radius:50%;background:#2a3742"></span>
+        </div>
+        <img src="showcase-aitrading.png" style="width:100%;display:block;border-bottom:1px solid #232823">
+        <div style="padding:20px 22px">
+          <div style="display:flex;justify-content:space-between;align-items:center"><div style="font-weight:600;font-size:16px;color:#f2f5ee">RichAITrading</div><div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#16a34a">Xem demo →</div></div>
+          <div style="font-size:13px;color:#92a196;margin-top:8px;line-height:1.6">Nền tảng AI Trading full-stack: phân tích biểu đồ bằng Gemini Vision, nạp USDT qua MetaMask, gói TradingView premium, hệ thống giới thiệu &amp; hoa hồng.</div>
+        </div>
+      </a>
+
+      <a href="thetrader/index.html" style="display:block;border:1px solid #232823;background:#121712;border-radius:8px;overflow:hidden">
+        <div style="height:34px;background:#0f120f;border-bottom:1px solid #232823;display:flex;align-items:center;gap:6px;padding:0 12px">
+          <span style="width:9px;height:9px;border-radius:50%;background:#2a3742"></span><span style="width:9px;height:9px;border-radius:50%;background:#2a3742"></span><span style="width:9px;height:9px;border-radius:50%;background:#2a3742"></span>
+        </div>
+        <img src="showcase-thetrader.png" style="width:100%;display:block;border-bottom:1px solid #232823">
+        <div style="padding:20px 22px">
+          <div style="display:flex;justify-content:space-between;align-items:center"><div style="font-weight:600;font-size:16px;color:#f2f5ee">Growth Asset Trading</div><div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#16a34a">Xem demo →</div></div>
+          <div style="font-size:13px;color:#92a196;margin-top:8px;line-height:1.6">Landing page dịch vụ code bot theo yêu cầu — kể câu chuyện qua pain point, quy trình 4 bước, case study và form liên hệ.</div>
+        </div>
+      </a>
+
+      <a href="backcom/index.html" style="display:block;border:1px solid #232823;background:#121712;border-radius:8px;overflow:hidden">
+        <div style="height:34px;background:#0f120f;border-bottom:1px solid #232823;display:flex;align-items:center;gap:6px;padding:0 12px">
+          <span style="width:9px;height:9px;border-radius:50%;background:#2a3742"></span><span style="width:9px;height:9px;border-radius:50%;background:#2a3742"></span><span style="width:9px;height:9px;border-radius:50%;background:#2a3742"></span>
+        </div>
+        <div style="height:225px;background:linear-gradient(160deg,#121712,#191d13);display:flex;flex-direction:column;justify-content:center;padding:0 26px;gap:12px;border-bottom:1px solid #232823">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:17px;color:#f2f5ee;font-weight:600;line-height:1.4">Hoàn phí Exness · Binance · Bybit · OKX</div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <span style="font-size:11px;padding:5px 10px;border:1px solid #1f3324;border-radius:20px;color:#16a34a">Exness</span>
+            <span style="font-size:11px;padding:5px 10px;border:1px solid #1f3324;border-radius:20px;color:#16a34a">Binance</span>
+            <span style="font-size:11px;padding:5px 10px;border:1px solid #1f3324;border-radius:20px;color:#16a34a">Bybit</span>
+            <span style="font-size:11px;padding:5px 10px;border:1px solid #1f3324;border-radius:20px;color:#16a34a">OKX</span>
+          </div>
+        </div>
+        <div style="padding:20px 22px">
+          <div style="display:flex;justify-content:space-between;align-items:center"><div style="font-weight:600;font-size:16px;color:#f2f5ee">BackCom</div><div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#16a34a">Xem demo →</div></div>
+          <div style="font-size:13px;color:#92a196;margin-top:8px;line-height:1.6">Trang hoàn phí giao dịch đa sàn — trang so sánh riêng cho từng broker, FAQ song ngữ, chuyển đổi Việt/Anh.</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <div id="services" style="padding:56px 40px 20px;scroll-margin-top:70px">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.14em;color:#7d9186;margin-bottom:10px">// DỊCH VỤ</div>
+    <div style="font-size:27px;font-weight:600;color:#f2f5ee;margin-bottom:28px">Nhận code theo yêu cầu</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+      <div style="border:1px solid #232823;border-radius:6px;padding:24px"><div style="font-family:'IBM Plex Mono',monospace;color:#16a34a;font-size:12px;margin-bottom:10px">01</div><div style="font-weight:600;font-size:16px;margin-bottom:8px">EA Cơ Bản</div><div style="font-size:13px;color:#92a196;line-height:1.6">1 chiến lược, 1 symbol, backtest report đầy đủ.</div></div>
+      <div style="border:1px solid #16a34a;border-radius:6px;padding:24px;background:#121712"><div style="font-family:'IBM Plex Mono',monospace;color:#16a34a;font-size:12px;margin-bottom:10px">02 — PHỔ BIẾN</div><div style="font-weight:600;font-size:16px;margin-bottom:8px">EA Nâng Cao</div><div style="font-size:13px;color:#92a196;line-height:1.6">Multi-strategy, panel GUI, Telegram alert, license key.</div></div>
+      <div style="border:1px solid #232823;border-radius:6px;padding:24px"><div style="font-family:'IBM Plex Mono',monospace;color:#16a34a;font-size:12px;margin-bottom:10px">03</div><div style="font-weight:600;font-size:16px;margin-bottom:8px">Web &amp; Automation</div><div style="font-size:13px;color:#92a196;line-height:1.6">Landing page, signal bot, forward bot, tool nội bộ theo yêu cầu.</div></div>
+    </div>
+  </div>
+
+  <!-- PROCESS -->
+  <div style="padding:56px 40px 64px">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.14em;color:#7d9186;margin-bottom:10px">// QUY TRÌNH</div>
+    <div style="font-size:27px;font-weight:600;color:#f2f5ee;margin-bottom:28px">Từ ý tưởng đến bot chạy thực tế</div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px">
+      <div style="border:1px solid #232823;border-radius:6px;padding:22px"><div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#16a34a;margin-bottom:8px">BƯỚC 01</div><div style="font-weight:600;font-size:15px;margin-bottom:6px">Tư vấn chiến lược</div><div style="font-size:12.5px;color:#92a196;line-height:1.6">Trao đổi mục tiêu, symbol, khẩu vị rủi ro.</div></div>
+      <div style="border:1px solid #232823;border-radius:6px;padding:22px"><div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#16a34a;margin-bottom:8px">BƯỚC 02</div><div style="font-weight:600;font-size:15px;margin-bottom:6px">Thiết kế &amp; Backtesting</div><div style="font-size:12.5px;color:#92a196;line-height:1.6">Code EA/bot, kiểm tra trên dữ liệu lịch sử.</div></div>
+      <div style="border:1px solid #232823;border-radius:6px;padding:22px"><div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#16a34a;margin-bottom:8px">BƯỚC 03</div><div style="font-weight:600;font-size:15px;margin-bottom:6px">Triển khai &amp; Kiểm tra</div><div style="font-size:12.5px;color:#92a196;line-height:1.6">Chạy demo, tinh chỉnh tham số thực tế.</div></div>
+      <div style="border:1px solid #232823;border-radius:6px;padding:22px"><div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#16a34a;margin-bottom:8px">BƯỚC 04</div><div style="font-weight:600;font-size:15px;margin-bottom:6px">Theo dõi &amp; Tối ưu</div><div style="font-size:12.5px;color:#92a196;line-height:1.6">Hỗ trợ, tối ưu tham số lâu dài.</div></div>
+    </div>
+  </div>
+
+  <!-- CONTACT / FOOTER -->
+  <div id="contact" style="padding:56px 40px;border-top:1px solid #232823;background:#0a0a0a;scroll-margin-top:70px">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px">
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.14em;color:#7d9186;margin-bottom:10px">// LIÊN HỆ</div>
+        <div style="font-size:27px;font-weight:600;color:#f2f5ee">Có ý tưởng bot? Bắt đầu bằng một tin nhắn.</div>
+      </div>
+      <div style="display:flex;gap:14px">
+        <a href="https://t.me/longhdtrader" style="padding:14px 26px;background:#16a34a;color:#0a0a0a;font-weight:600;border-radius:4px;font-size:14.5px">Nhắn Telegram</a>
+        <div style="padding:14px 26px;border:1px solid #2b4536;color:#eef2ee;border-radius:4px;font-size:14.5px;font-family:'IBM Plex Mono',monospace">0866 797 299</div>
+      </div>
+    </div>
+    <div style="margin-top:40px;padding-top:24px;border-top:1px solid #232823;display:flex;justify-content:space-between;align-items:center">
+      <div style="display:flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#92a196"><img src="logo.jpeg" style="width:16px;height:16px;border-radius:4px;object-fit:cover">© 2026 Growth Asset Trading</div>
+      <div style="display:flex;gap:20px;font-size:13px;color:#92a196"><span>Telegram: @longhdtrader</span><span>0866 797 299</span></div>
+    </div>
+  </div>
+
+</div>
+
+</x-dc>
+</body>
+</html>
